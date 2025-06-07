@@ -13,7 +13,7 @@ function mowYard(callback, name) {
 /* weedEat	A function that will take in a person's name and a callback function. If the chore is completed, log "PERSON'S NAME finished using the weed eater." to the console and call the next callback function. Otherwise, log "PERSON'S NAME fell asleep after mowing the yard." to the console. */
 
 function weedEat (callback, name) {
-   const outcome = useEnergy(15);
+   const outcome = useEnergy(10);
     setTimeout(() => {
         if (outcome === true) { console.log (`${name} finished using the weed eater`); callback()} 
         else { console.log(`${name} fell asleep after mowing the yard`)};}, 1500)}
@@ -29,7 +29,7 @@ function trimHedges(callback, name) {
 }
 // collectWood	A function that will take in a person's name and a callback function. If the chore is completed, log "PERSON'S NAME finished collecting wood." to the console and call the next callback function. Otherwise, log "PERSON'S NAME fell asleep after trimming the hedges." to the console. 
 function collectWood(callback, name) {
-    const outcome = useEnergy(40);
+    const outcome = useEnergy(30);
     setTimeout (()=>{ 
         if (outcome===true){console.log ( `${name} finished collecting wood`); callback()} 
         else { console.log (`${name} fell asleep after trimming the hedges.`)} }, 2500);
@@ -38,7 +38,7 @@ function collectWood(callback, name) {
 // waterGarden	A function that will take in a person's name and a callback function. If the chore is completed, log "PERSON'S NAME finished watering the garden." to the console and call the next callback function. Otherwise, log "PERSON'S NAME fell asleep after collecting wood." to the console.
 
 function waterGarden (callback, name) {
-    const outcome =useEnergy(50);
+    const outcome =useEnergy(40);
     setTimeout (()=> {
         if(outcome=== true){console.log(`${name} finished watering the garden`); callback();} 
         else { console.log ( `${name} fell asleep after watering the garden`)}}, 500)
