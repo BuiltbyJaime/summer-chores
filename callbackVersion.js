@@ -5,7 +5,7 @@ function useEnergy(prob) {
         const result = Math.floor(Math.random() * 10);
         console.log (result > prob);
 }
-let outcome = useEnergy(prob);
+
 
 /* 
 mowYard	A function that will take in a person's name and a callback function. When the chore is complete, log "PERSON'S NAME mowed the yard." to the console.
