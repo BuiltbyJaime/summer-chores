@@ -1,7 +1,7 @@
 # summer-chores
 # Summer Chores Callback Simulation
 
-This project is a fun JavaScript simulation that demonstrates how to use **asynchronous callbacks** to handle a sequence of tasks (or "chores") for a fictional character. The goal is to show how one chore triggers the next **only if the previous one was successfully completed**, mimicking real-world dependencies and energy levels.
+This project is a fun JavaScript simulation that demonstrates how to use **asynchronous callbacks** to handle a sequence of tasks (or "chores") for a fictional character. The goal is to show how one chore triggers the next **only if the previous one was successfully completed**, mimicking real-world dependencies and energy levels as the character has a higher probability to get tired as they complete more chores.
 
 ## 🛠 Project Summary
 
