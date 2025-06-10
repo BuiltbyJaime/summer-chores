@@ -1,7 +1,7 @@
-# summer-chores
-# Summer Chores Callback Simulation
+# Summer-Chores
+# 
 
-This project is a fun JavaScript simulation that demonstrates how to use **asynchronous callbacks** to handle a sequence of tasks (or "chores") for a fictional character. The goal is to show how one chore triggers the next **only if the previous one was successfully completed**, mimicking real-world dependencies and energy levels.
+This project is a fun JavaScript simulation that demonstrates how to use **asynchronous code** to handle a sequence of tasks (or "chores") for a fictional character. The goal is to show how one chore triggers the next **only if the previous one was successfully completed**, mimicking real-world dependencies and energy levels.
 
 ## 🛠 Project Summary
 
@@ -15,14 +15,24 @@ The script simulates a person (e.g., "Billy") attempting to complete a list of s
 
 Each chore is:
 - Simulated with a `setTimeout()` to introduce delay
-- Conditioned on the person's **energy level**, using a probabilistic `useEnergy()` function
-- Connected to the next chore via **callbacks**
+- Conditioned on the person's **energy level**, using a probabilistic `useEnergy()` function.
 
 If the person "runs out of energy" (i.e. `useEnergy()` returns false), they "fall asleep" and stop working.
 
-This project is intentionally written in a **callback-based style** to illustrate "callback hell" and the importance of control flow in asynchronous JavaScript.
+This project contains 3 files that demonstrates 3 iterations of asynchronus code to display the importance of control flow in asynchronous JavaScript.
 
 ---
+callbackVersion.js -
+ a **callback-based style** to illustrate "callback hell."
+
+promiseVersion.js -
+ Refactors the callback version using JavaScript Promises and .then() chains.
+
+asyncAwaitVersion.js -
+ Uses async/await for a clean, modern, and readable approach to asynchronous logic.
+
+ Includes proper try...catch for handling failed tasks.
+
 
 ## 🔧 Requirements
 
